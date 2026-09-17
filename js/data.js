@@ -12,7 +12,7 @@ export const PROFILE = {
   stats: {
     repos: "16+",
     languages: "8+",
-    liveProjects: "6",
+    liveProjects: "5",
   },
 };
 
@@ -33,7 +33,7 @@ export const FEATURED = [
       { name: "Talk-to-Sign", status: "planned" },
     ],
     github: "https://github.com/doasis77/sign-language-translator",
-    demo: "https://signtalk-demo.vercel.app",
+    demo: null,
     visual: "signtalk",
     accent: "#7C5CFC",
   },
@@ -70,7 +70,7 @@ export const FEATURED = [
       { name: "JWT Auth", status: "live" },
     ],
     github: "https://github.com/doasis77/CanteenHub",
-    demo: "https://canteenhub-demo.vercel.app",
+    demo: null,
     visual: "canteenhub",
     accent: "#F59E0B",
   },
@@ -109,7 +109,7 @@ export const CASE_STUDIES = {
       "Separating detection, classification, and UI layers keeps the system maintainable",
     ],
     github: "https://github.com/doasis77/sign-language-translator",
-    demo: "https://signtalk-demo.vercel.app",
+    demo: null,
   },
   scars: {
     title: "SCARS",
@@ -185,7 +185,7 @@ export const CASE_STUDIES = {
       "Demo mode keeps portfolio projects usable even without a running backend",
     ],
     github: "https://github.com/doasis77/CanteenHub",
-    demo: "https://canteenhub-demo.vercel.app",
+    demo: null,
   },
 };
 
@@ -208,7 +208,7 @@ export const PROJECTS = [
     category: "ai",
     status: "Deployed",
     url: "https://github.com/doasis77/sign-language-translator",
-    demo: "https://signtalk-demo.vercel.app",
+    demo: null,
   },
   {
     name: "CanteenHub",
@@ -218,7 +218,7 @@ export const PROJECTS = [
     category: "web",
     status: "Deployed",
     url: "https://github.com/doasis77/CanteenHub",
-    demo: "https://canteenhub-demo.vercel.app",
+    demo: null,
   },
   {
     name: "Clinic",
