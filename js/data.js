@@ -261,6 +261,17 @@ export const PROJECTS = [
     demo: null,
   },
   {
+    name: "scars",
+    title: "SCARS",
+    description:
+      "Mobile app for community emergency reporting, alert distribution, and resource coordination with role-based dashboards and offline incident sync.",
+    tech: ["React Native", "Expo", "TypeScript", "Supabase", "PostgreSQL"],
+    category: "mobile",
+    status: "Complete",
+    url: "https://github.com/doasis77/scars",
+    demo: null,
+  },
+  {
     name: "CanteenHub",
     title: "CanteenHub",
     description: "Campus canteen ordering platform with real-time tracking, loyalty points, and JWT authentication.",
