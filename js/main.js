@@ -224,9 +224,7 @@ function renderProjects(filter = "all") {
 
   const filtered = filter === "all"
     ? PROJECTS
-    : filter === "security"
-      ? []
-      : PROJECTS.filter((p) => p.category === filter);
+    : PROJECTS.filter((p) => p.category === filter);
 
   if (filtered.length === 0) {
     grid.innerHTML = `<p class="empty-filter">No projects in this category yet. Security-related work is covered in the <a href="#cybersecurity">Cybersecurity</a> section.</p>`;

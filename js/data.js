@@ -10,7 +10,7 @@ export const PROFILE = {
   linkedin: "https://linkedin.com/in/bill-amegah-3b799926a/",
   cvPath: "assets/cv.html",
   stats: {
-    repos: "16+",
+    repos: "17+",
     languages: "8+",
     liveProjects: "5",
   },
@@ -244,6 +244,17 @@ export const CASE_STUDIES = {
 
 export const PROJECTS = [
   {
+    name: "password-strength-analyzer",
+    title: "Password Strength Analyzer",
+    description:
+      "Privacy-first password hygiene toolkit with explainable strength scoring, secure generation, local-only browser analysis, and FastAPI backend with security hardening.",
+    tech: ["React", "TypeScript", "FastAPI", "Vite", "Tailwind CSS"],
+    category: "security",
+    status: "Complete",
+    url: "https://github.com/doasis77/password-strength-analyzer",
+    demo: null,
+  },
+  {
     name: "AI-Rag-System-",
     title: "AI RAG Chatbot",
     description: "Retrieval-Augmented Generation chatbot for document-based Q&A built in Python.",
@@ -420,7 +431,7 @@ export const PROJECTS = [
 
 export const SKILLS = {
   languages: ["Python", "JavaScript", "TypeScript", "Java", "SQL", "HTML", "CSS"],
-  frameworks: ["React", "React Native", "Node.js", "Express", "Flask", "Expo"],
+  frameworks: ["React", "React Native", "Node.js", "Express", "Flask", "FastAPI", "Expo"],
   ai: ["Scikit-learn", "OpenCV", "MediaPipe", "Machine Learning", "Computer Vision"],
   databases: ["PostgreSQL", "Neon", "Supabase", "SQLite"],
   tools: ["Git", "GitHub", "VS Code", "Linux", "Docker"],
@@ -434,7 +445,7 @@ export const CYBERSECURITY = [
   },
   {
     title: "Application Security",
-    items: ["Authentication", "Authorization", "Secure APIs", "Input validation"],
+    items: ["Authentication", "Authorization", "Secure APIs", "Input validation", "Password security"],
   },
   {
     title: "System Security",
