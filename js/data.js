@@ -12,7 +12,7 @@ export const PROFILE = {
   stats: {
     repos: "16+",
     languages: "8+",
-    liveProjects: "6",
+    liveProjects: "5",
   },
 };
 
@@ -121,7 +121,7 @@ export const FEATURED = [
       { name: "Loyalty Points", status: "live" },
     ],
     github: "https://github.com/doasis77/CanteenHub",
-    demo: "https://canteenhub-demo.vercel.app",
+    demo: null,
     visual: "canteenhub",
     accent: "#F59E0B",
   },
@@ -238,7 +238,7 @@ export const CASE_STUDIES = {
       "Role-based dashboards make campus canteen workflows usable beyond student ordering",
     ],
     github: "https://github.com/doasis77/CanteenHub",
-    demo: "https://canteenhub-demo.vercel.app",
+    demo: null,
   },
 };
 
@@ -283,7 +283,7 @@ export const PROJECTS = [
     category: "web",
     status: "Deployed",
     url: "https://github.com/doasis77/CanteenHub",
-    demo: "https://canteenhub-demo.vercel.app",
+    demo: null,
   },
   {
     name: "CanteenHub-mobile",
