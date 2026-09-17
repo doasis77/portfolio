@@ -12,7 +12,7 @@ export const PROFILE = {
   stats: {
     repos: "16+",
     languages: "8+",
-    liveProjects: "3",
+    liveProjects: "6",
   },
 };
 
@@ -84,7 +84,7 @@ export const CASE_STUDIES = {
     problem:
       "Communication between Deaf and hearing communities can be difficult when interpreters or knowledge of sign language are unavailable.",
     role: "Sole developer — designed the gesture recognition pipeline, built the Flask backend, and created the web interface.",
-    technology: ["Python", "Flask", "MediaPipe", "OpenCV", "JavaScript", "HTML/CSS", "SQLite"],
+    technology: ["Python", "Flask", "MediaPipe", "OpenCV", "JavaScript", "HTML/CSS", "Neon", "SQLite"],
     architecture:
       "Webcam feed → MediaPipe hand landmark detection → feature extraction → gesture classification → text output displayed in the browser. User accounts and translation history stored via Flask-SQLAlchemy.",
     features: [
@@ -154,6 +154,39 @@ export const CASE_STUDIES = {
     github: "https://github.com/doasis77/scars",
     demo: null,
   },
+  canteenhub: {
+    title: "CanteenHub",
+    overview:
+      "CanteenHub is a campus canteen ordering platform with menu browsing, cart management, order tracking, and a loyalty points system.",
+    problem:
+      "Campus canteens often rely on manual ordering, making it hard for students to browse menus, track orders, and manage repeat purchases efficiently.",
+    role: "Sole developer — built the Express API, PostgreSQL schema, JWT authentication, and responsive frontend.",
+    technology: ["Node.js", "Express", "PostgreSQL", "Neon", "JavaScript", "JWT"],
+    architecture:
+      "Express REST API with JWT auth and PostgreSQL (Neon) persistence. Frontend consumes menu, cart, order, and loyalty endpoints with demo fallback for static deployment.",
+    features: [
+      "Menu browsing with categories and filters",
+      "Shopping cart and checkout flow",
+      "Order history and status tracking",
+      "Loyalty points accrual and redemption",
+    ],
+    challenges: [
+      "Designing a schema that supports cart, orders, and loyalty in one system",
+      "Securing API routes with JWT while keeping the frontend simple",
+      "Providing a usable demo when the backend is not connected",
+    ],
+    solution:
+      "Built a modular Express API with PostgreSQL on Neon, role-based auth middleware, and a frontend that falls back to sample menu data for live demos.",
+    results:
+      "Working full-stack ordering platform with a live Vercel demo and production-ready Neon database configuration.",
+    lessons: [
+      "Neon simplifies PostgreSQL hosting for student and portfolio projects",
+      "Separating API and static frontend makes deployment more flexible",
+      "Demo mode keeps portfolio projects usable even without a running backend",
+    ],
+    github: "https://github.com/doasis77/CanteenHub",
+    demo: "https://canteenhub-demo.vercel.app",
+  },
 };
 
 export const PROJECTS = [
@@ -168,14 +201,34 @@ export const PROJECTS = [
     demo: null,
   },
   {
+    name: "sign-language-translator",
+    title: "SignTalk",
+    description: "AI-powered sign language translator with real-time gesture recognition via webcam.",
+    tech: ["Python", "Flask", "MediaPipe", "OpenCV"],
+    category: "ai",
+    status: "Deployed",
+    url: "https://github.com/doasis77/sign-language-translator",
+    demo: "https://signtalk-demo.vercel.app",
+  },
+  {
     name: "CanteenHub",
     title: "CanteenHub",
     description: "Campus canteen ordering platform with real-time tracking, loyalty points, and JWT authentication.",
     tech: ["Node.js", "PostgreSQL", "Neon", "JavaScript"],
     category: "web",
-    status: "Complete",
+    status: "Deployed",
     url: "https://github.com/doasis77/CanteenHub",
     demo: "https://canteenhub-demo.vercel.app",
+  },
+  {
+    name: "Clinic",
+    title: "Animalito Veterinary Clinic",
+    description: "Veterinary patient history form with Neon PostgreSQL backend for submission storage.",
+    tech: ["Node.js", "Express", "Neon", "HTML"],
+    category: "web",
+    status: "Deployed",
+    url: "https://github.com/MaameArabaa/Clinic",
+    demo: "https://animalito-clinic.vercel.app",
   },
   {
     name: "Events-Management",
@@ -233,7 +286,8 @@ export const PROJECTS = [
     description: "Employee vehicle requisition portal with department and date range capture.",
     tech: ["HTML", "CSS"],
     category: "web",
-    status: "Complete",
+    status: "Deployed",
+    url: "https://github.com/doasis77/Vehicle-Requisition-System",
     demo: "https://vehicle-requisition-system.vercel.app",
   },
   {
@@ -242,7 +296,8 @@ export const PROJECTS = [
     description: "Corporate stationery request portal as a single-page HTML form.",
     tech: ["HTML", "CSS"],
     category: "tools",
-    status: "Complete",
+    status: "Deployed",
+    url: "https://github.com/doasis77/Stationery-Request-Form",
     demo: "https://stationery-request-form.vercel.app",
   },
   {

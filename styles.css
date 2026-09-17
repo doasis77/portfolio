@@ -528,6 +528,36 @@ h3 { font-size: 1.1rem; }
 .mock-incident-title { display: block; font-weight: 600; font-size: 0.85rem; margin: 6px 0 2px; }
 .mock-incident-meta { font-size: 0.72rem; color: var(--text-secondary); }
 
+.mock-canteenhub .mock-menu {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mock-canteenhub .mock-item {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  padding: 6px 8px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+}
+.mock-canteenhub .mock-cart {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+}
+.mock-canteenhub .mock-cart-total {
+  display: block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
 .mock-scrolllock .mock-phone {
   background: #0a0d14;
   border: 2px solid var(--border);
@@ -772,13 +802,17 @@ h3 { font-size: 1.1rem; }
 .pinned-repo:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ── Building card ── */
+.building-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
 .building-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-left: 3px solid var(--success);
   border-radius: var(--radius);
   padding: 28px;
-  max-width: 680px;
 }
 .building-header {
   display: flex;

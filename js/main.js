@@ -1,4 +1,5 @@
 import {
+  PROFILE,
   FEATURED,
   CASE_STUDIES,
   PROJECTS,
@@ -377,7 +378,17 @@ function initContactForm() {
 }
 
 /* ── Init ── */
+function syncHeroStats() {
+  const stats = document.querySelectorAll(".hero-stats .stat");
+  if (stats.length >= 3 && PROFILE.stats) {
+    stats[0].querySelector(".stat-value").textContent = PROFILE.stats.repos;
+    stats[1].querySelector(".stat-value").textContent = PROFILE.stats.languages;
+    stats[2].querySelector(".stat-value").textContent = PROFILE.stats.liveProjects;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  syncHeroStats();
   renderFeatured();
   renderFilters();
   renderProjects();

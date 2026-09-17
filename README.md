@@ -2,7 +2,7 @@
 
 Professional portfolio site for [doasis77](https://github.com/doasis77).
 
-**Live:** [doasis77.github.io/portfolio](https://doasis77.github.io/portfolio/)
+**Live:** [bill-amegah-portfolio.vercel.app](https://bill-amegah-portfolio.vercel.app/)
 
 ## Setup
 
@@ -14,7 +14,7 @@ npx serve .
 
 ## CV
 
-Place your resume at `assets/Bill-Amegah-CV.pdf` for the Download CV buttons to work.
+View or print the CV at `assets/cv.html`.
 
 ## Contact form
 
@@ -31,5 +31,5 @@ portfolio/
 │   └── main.js      # Rendering and interactivity
 └── assets/
     ├── favicon.svg
-    └── Bill-Amegah-CV.pdf   ← add your CV here
+    └── cv.html
 ```
