@@ -8,7 +8,7 @@ export const PROFILE = {
   email: "amegahbill@gmail.com",
   github: "https://github.com/doasis77",
   linkedin: "https://linkedin.com/in/bill-amegah-3b799926a/",
-  cvPath: "assets/Bill-Amegah-CV.pdf",
+  cvPath: "assets/cv.html",
   stats: {
     repos: "16+",
     languages: "8+",
@@ -33,8 +33,7 @@ export const FEATURED = [
       { name: "Talk-to-Sign", status: "planned" },
     ],
     github: "https://github.com/doasis77/sign-language-translator",
-    demo: null,
-    visual: "signtalk",
+    demo: "https://signtalk-demo.vercel.app",
     accent: "#7C5CFC",
   },
   {
@@ -110,7 +109,7 @@ export const CASE_STUDIES = {
       "Separating detection, classification, and UI layers keeps the system maintainable",
     ],
     github: "https://github.com/doasis77/sign-language-translator",
-    demo: null,
+    demo: "https://signtalk-demo.vercel.app",
   },
   scars: {
     title: "SCARS",
@@ -207,8 +206,7 @@ export const PROJECTS = [
     tech: ["Node.js", "PostgreSQL", "JavaScript"],
     category: "web",
     status: "Complete",
-    url: "https://github.com/doasis77/CanteenHub",
-    demo: null,
+    demo: "https://canteenhub-demo.vercel.app",
   },
   {
     name: "Events-Management",
@@ -247,8 +245,7 @@ export const PROJECTS = [
     tech: ["Python", "Jupyter", "ML"],
     category: "ai",
     status: "Complete",
-    url: "https://github.com/doasis77/neural-networks",
-    demo: null,
+    demo: "https://neural-networks-demo.vercel.app",
   },
   {
     name: "raycom",
@@ -257,8 +254,7 @@ export const PROJECTS = [
     tech: ["SIP.js", "Express", "PostgreSQL"],
     category: "web",
     status: "Complete",
-    url: "https://github.com/doasis77/raycom",
-    demo: null,
+    demo: "https://raycom-dialer.vercel.app",
   },
   {
     name: "Vehicle-Requisition-System",
@@ -267,8 +263,7 @@ export const PROJECTS = [
     tech: ["HTML", "CSS"],
     category: "web",
     status: "Complete",
-    url: "https://github.com/doasis77/Vehicle-Requisition-System",
-    demo: null,
+    demo: "https://vehicle-requisition-system.vercel.app",
   },
   {
     name: "Stationery-Request-Form",
@@ -277,8 +272,7 @@ export const PROJECTS = [
     tech: ["HTML", "CSS"],
     category: "tools",
     status: "Complete",
-    url: "https://github.com/doasis77/Stationery-Request-Form",
-    demo: null,
+    demo: "https://stationery-request-form.vercel.app",
   },
   {
     name: "Mental-Health-Awareness-Event-Website",
