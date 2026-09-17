@@ -12,7 +12,7 @@ export const PROFILE = {
   stats: {
     repos: "16+",
     languages: "8+",
-    liveProjects: "5",
+    liveProjects: "6",
   },
 };
 
@@ -109,18 +109,19 @@ export const FEATURED = [
   {
     id: "canteenhub",
     title: "CanteenHub",
-    subtitle: "Campus canteen ordering made simple",
+    subtitle: "Campus canteen ordering — web and mobile",
     description:
-      "A full-stack campus canteen platform with menu browsing, cart management, order tracking, and loyalty points.",
-    tech: ["Node.js", "PostgreSQL", "Neon", "JavaScript", "JWT"],
+      "A production-ready campus canteen platform with Next.js web app, Expo Go mobile app, menu browsing, cart, order tracking, loyalty points, and staff/admin dashboards.",
+    tech: ["Next.js", "Expo", "Prisma", "PostgreSQL", "Neon", "TypeScript"],
     features: [
+      { name: "Web & Mobile Apps", status: "live" },
       { name: "Menu & Cart", status: "live" },
       { name: "Order Tracking", status: "live" },
+      { name: "Staff & Admin", status: "live" },
       { name: "Loyalty Points", status: "live" },
-      { name: "JWT Auth", status: "live" },
     ],
     github: "https://github.com/doasis77/CanteenHub",
-    demo: null,
+    demo: "https://canteenhub-demo.vercel.app",
     visual: "canteenhub",
     accent: "#F59E0B",
   },
@@ -207,35 +208,37 @@ export const CASE_STUDIES = {
   canteenhub: {
     title: "CanteenHub",
     overview:
-      "CanteenHub is a campus canteen ordering platform with menu browsing, cart management, order tracking, and a loyalty points system.",
+      "CanteenHub is a campus canteen ordering platform with a Next.js web app, Expo Go mobile app, menu browsing, cart management, order tracking, loyalty points, and staff/admin dashboards.",
     problem:
-      "Campus canteens often rely on manual ordering, making it hard for students to browse menus, track orders, and manage repeat purchases efficiently.",
-    role: "Sole developer — built the Express API, PostgreSQL schema, JWT authentication, and responsive frontend.",
-    technology: ["Node.js", "Express", "PostgreSQL", "Neon", "JavaScript", "JWT"],
+      "Campus canteens often rely on manual ordering, making it hard for students to browse menus, track orders, and manage repeat purchases efficiently across web and mobile.",
+    role: "Sole developer — built the Next.js web app, Expo mobile app, Prisma data layer, JWT authentication, and role-based staff/admin tools.",
+    technology: ["Next.js", "Expo", "React Native", "Prisma", "PostgreSQL", "Neon", "TypeScript", "JWT"],
     architecture:
-      "Express REST API with JWT auth and PostgreSQL (Neon) persistence. Frontend consumes menu, cart, order, and loyalty endpoints with demo fallback for static deployment.",
+      "Next.js App Router web app and API routes with Prisma on Neon PostgreSQL. Expo Go mobile app consumes the same REST API for menu, cart, orders, and loyalty. Role-based access for students, staff, and admins.",
     features: [
-      "Menu browsing with categories and filters",
+      "Next.js web app with menu, cart, checkout, and profile",
+      "Expo Go mobile app for on-campus ordering",
       "Shopping cart and checkout flow",
-      "Order history and status tracking",
+      "Order history and live status tracking",
+      "Staff order queue and admin analytics",
       "Loyalty points accrual and redemption",
     ],
     challenges: [
-      "Designing a schema that supports cart, orders, and loyalty in one system",
-      "Securing API routes with JWT while keeping the frontend simple",
-      "Providing a usable demo when the backend is not connected",
+      "Designing a schema that supports cart, orders, loyalty, and multiple roles in one system",
+      "Keeping web and mobile clients in sync with the same API contract",
+      "Securing API routes with JWT while supporting refresh tokens and RBAC",
     ],
     solution:
-      "Built a modular Express API with PostgreSQL on Neon, role-based auth middleware, and a frontend that falls back to sample menu data for live demos.",
+      "Built a Next.js full-stack app with Prisma on Neon, shared REST APIs for web and Expo mobile, and role-based dashboards for staff and admin workflows.",
     results:
-      "Working full-stack ordering platform with a live Vercel demo and production-ready Neon database configuration.",
+      "Working web and mobile ordering platform with a live Vercel deployment and production-ready Neon database configuration.",
     lessons: [
-      "Neon simplifies PostgreSQL hosting for student and portfolio projects",
-      "Separating API and static frontend makes deployment more flexible",
-      "Demo mode keeps portfolio projects usable even without a running backend",
+      "Prisma and Neon simplify PostgreSQL for full-stack student and portfolio projects",
+      "A shared API layer keeps web and mobile clients maintainable",
+      "Role-based dashboards make campus canteen workflows usable beyond student ordering",
     ],
     github: "https://github.com/doasis77/CanteenHub",
-    demo: null,
+    demo: "https://canteenhub-demo.vercel.app",
   },
 };
 
@@ -274,10 +277,22 @@ export const PROJECTS = [
   {
     name: "CanteenHub",
     title: "CanteenHub",
-    description: "Campus canteen ordering platform with real-time tracking, loyalty points, and JWT authentication.",
-    tech: ["Node.js", "PostgreSQL", "Neon", "JavaScript"],
+    description:
+      "Next.js campus canteen web app with menu, cart, checkout, order tracking, loyalty points, and staff/admin dashboards backed by Neon PostgreSQL.",
+    tech: ["Next.js", "Prisma", "PostgreSQL", "Neon", "TypeScript"],
     category: "web",
     status: "Deployed",
+    url: "https://github.com/doasis77/CanteenHub",
+    demo: "https://canteenhub-demo.vercel.app",
+  },
+  {
+    name: "CanteenHub-mobile",
+    title: "CanteenHub Mobile",
+    description:
+      "Expo Go mobile app for campus canteen ordering with menu browsing, cart, checkout, and live order tracking.",
+    tech: ["Expo", "React Native", "TypeScript", "Expo Router"],
+    category: "mobile",
+    status: "Complete",
     url: "https://github.com/doasis77/CanteenHub",
     demo: null,
   },
