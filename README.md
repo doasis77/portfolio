@@ -14,7 +14,7 @@ npx serve .
 
 ## CV
 
-View or print the CV at `assets/cv.html`.
+View the PDF CV at `assets/cv.html`. Use **Print CV** on the site or the viewer page to print or save as PDF.
 
 ## Contact form
 
@@ -30,6 +30,7 @@ portfolio/
 │   ├── data.js      # Project data (edit here to update content)
 │   └── main.js      # Rendering and interactivity
 └── assets/
+    ├── Bill_Amegah.pdf
     ├── favicon.svg
     └── cv.html
 ```

@@ -5,74 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bill Amegah — CV</title>
   <style>
-    body { font-family: Georgia, serif; max-width: 800px; margin: 40px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.5; }
-    h1 { margin-bottom: 4px; font-size: 2rem; }
-    h2 { font-size: 1.1rem; color: #444; margin-top: 28px; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
-    .subtitle { color: #555; margin-bottom: 8px; }
-    .contact { font-size: 0.95rem; margin-bottom: 24px; }
-    .contact a { color: #0066cc; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
-    .skill { background: #f0f4f8; padding: 4px 10px; border-radius: 4px; font-size: 0.9rem; }
-    @media print { body { margin: 0; } .no-print { display: none; } }
+    :root {
+      color-scheme: light dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: #0f1117;
+      color: #e8eaed;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: #151821;
+    }
+
+    .toolbar a,
+    .toolbar button {
+      appearance: none;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: transparent;
+      color: inherit;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font: inherit;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .toolbar button.primary,
+    .toolbar a.primary {
+      background: #6366f1;
+      border-color: #6366f1;
+      color: #fff;
+    }
+
+    .toolbar a:hover,
+    .toolbar button:hover {
+      border-color: rgba(255, 255, 255, 0.24);
+    }
+
+    .cv-frame {
+      display: block;
+      width: 100%;
+      height: calc(100vh - 57px);
+      border: 0;
+      background: #fff;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      .cv-frame {
+        height: 100vh;
+      }
+    }
   </style>
 </head>
 <body>
-  <p class="no-print"><a href="../index.html">&larr; Back to portfolio</a> · <button onclick="window.print()">Print / Save as PDF</button></p>
-  <h1>Bill Amegah</h1>
-  <p class="subtitle">Computer Science Graduate · Software Developer · AI &amp; Cybersecurity</p>
-  <p class="contact">
-    <a href="mailto:amegahbill@gmail.com">amegahbill@gmail.com</a> ·
-    <a href="https://github.com/doasis77">github.com/doasis77</a> ·
-    <a href="https://linkedin.com/in/bill-amegah-3b799926a/">LinkedIn</a> ·
-    <a href="https://bill-amegah-portfolio.vercel.app">Portfolio</a>
-  </p>
-
-  <h2>Summary</h2>
-  <p>Software developer building practical applications across full-stack development, artificial intelligence, and cybersecurity. Experienced with Python, JavaScript, Node.js, Flask, PostgreSQL, and Neon.</p>
-
-  <h2>Featured Projects</h2>
-  <ul>
-    <li><strong>SignTalk</strong> — AI sign language translator (Flask, MediaPipe, OpenCV)</li>
-    <li><strong>SCARS</strong> — Community emergency reporting platform (React Native, Supabase)</li>
-    <li><strong>CanteenHub</strong> — Campus canteen platform with Next.js web app and Expo mobile app (Prisma, Neon PostgreSQL)</li>
-    <li><strong>Password Strength Analyzer</strong> — Privacy-first password hygiene toolkit (React, TypeScript, FastAPI)</li>
-    <li><strong>Lab Intrusion Detection System</strong> — Network IDS with Scapy capture, rule engine, and real-time dashboard (FastAPI, React)</li>
-    <li><strong>AI RAG Chatbot</strong> — Document-based Q&amp;A system (Python, RAG)</li>
-  </ul>
-
-  <h2>Live Demos</h2>
-  <ul>
-    <li><a href="https://vehicle-requisition-system.vercel.app">Vehicle Requisition System</a></li>
-    <li><a href="https://stationery-request-form.vercel.app">Stationery Request Form</a></li>
-  </ul>
-
-  <h2>Technical Skills</h2>
-  <div class="skills">
-    <span class="skill">Python</span><span class="skill">JavaScript</span><span class="skill">TypeScript</span>
-    <span class="skill">React</span><span class="skill">Node.js</span><span class="skill">Express</span>
-    <span class="skill">Flask</span><span class="skill">PostgreSQL</span><span class="skill">Neon</span>
-    <span class="skill">OpenCV</span><span class="skill">MediaPipe</span><span class="skill">Git</span>
+  <div class="toolbar no-print">
+    <a href="../index.html">&larr; Back to portfolio</a>
+    <button type="button" class="primary" onclick="printCV()">Print CV</button>
+    <a href="Bill_Amegah.pdf" download="Bill_Amegah_CV.pdf">Download PDF</a>
   </div>
+  <iframe
+    id="cv-frame"
+    class="cv-frame"
+    src="Bill_Amegah.pdf"
+    title="Bill Amegah CV"
+  ></iframe>
+  <script>
+    function printCV() {
+      const frame = document.getElementById("cv-frame");
+      if (!frame || !frame.contentWindow) return;
+      frame.contentWindow.focus();
+      frame.contentWindow.print();
+    }
 
-  <h2>Work Experience</h2>
-  <p><strong>Communications Engineer</strong> — Raycom Technologies, Accra, Ghana (Jul 2025 – Aug 2025)</p>
-  <ul>
-    <li>Installed and managed Ubuntu Linux systems, including static IP setup, user permissions, and updates.</li>
-    <li>Set up and secured PostgreSQL databases, enabling remote access through configuration and firewall tuning.</li>
-    <li>Developed backend APIs with Node.js and Express, integrated with PostgreSQL for CRUD operations.</li>
-    <li>Configured Apache2 reverse proxy and deployed Avaya J100 IP phones, managing SIP registration and firmware.</li>
-  </ul>
-  <p><strong>IT Intern</strong> — Minerals Commission, Accra, Ghana (May 2024 – Jun 2024)</p>
-  <ul>
-    <li>Resolved network connectivity issues and monitored system performance.</li>
-    <li>Developed vehicle and stationery requisition systems to improve internal workflow efficiency.</li>
-    <li>Assisted with IT documentation and created staff training materials.</li>
-  </ul>
-
-  <h2>Education</h2>
-  <p><strong>BSc Computer Science</strong> — Academic City University, Ghana (2022–2026)</p>
-  <p><strong>Final-year project:</strong> SignTalk</p>
+    if (new URLSearchParams(window.location.search).get("print") === "1") {
+      window.addEventListener("load", () => window.setTimeout(printCV, 700));
+    }
+  </script>
 </body>
 </html>

@@ -9,6 +9,7 @@ export const PROFILE = {
   github: "https://github.com/doasis77",
   linkedin: "https://linkedin.com/in/bill-amegah-3b799926a/",
   cvPath: "assets/cv.html",
+  cvPdfPath: "assets/Bill_Amegah.pdf",
   stats: {
     repos: "18+",
     languages: "8+",
