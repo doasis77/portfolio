@@ -10,7 +10,7 @@ export const PROFILE = {
   linkedin: "https://linkedin.com/in/bill-amegah-3b799926a/",
   cvPath: "assets/cv.html",
   stats: {
-    repos: "17+",
+    repos: "18+",
     languages: "8+",
     liveProjects: "5",
   },
@@ -244,6 +244,17 @@ export const CASE_STUDIES = {
 
 export const PROJECTS = [
   {
+    name: "intrusion-detection-system",
+    title: "Lab Intrusion Detection System",
+    description:
+      "Defensive network IDS for controlled lab environments with Scapy packet capture, rule-based detection, PostgreSQL alert storage, and a real-time React dashboard.",
+    tech: ["Python", "FastAPI", "Scapy", "React", "TypeScript", "PostgreSQL"],
+    category: "security",
+    status: "Complete",
+    url: "https://github.com/doasis77/intrusion-detection-system",
+    demo: null,
+  },
+  {
     name: "password-strength-analyzer",
     title: "Password Strength Analyzer",
     description:
@@ -441,7 +452,7 @@ export const SKILLS = {
 export const CYBERSECURITY = [
   {
     title: "Network Security",
-    items: ["Linux networking", "TCP/IP", "SSH", "Firewalls", "Network fundamentals"],
+    items: ["Linux networking", "TCP/IP", "SSH", "Firewalls", "Network fundamentals", "Intrusion detection"],
   },
   {
     title: "Application Security",
