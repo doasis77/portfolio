@@ -1,5 +1,6 @@
 import {
   PROFILE,
+  EXPERIENCE,
   FEATURED,
   CASE_STUDIES,
   PROJECTS,
@@ -52,6 +53,24 @@ function projectVisual(type) {
       </div>`,
   };
   return visuals[type] || "";
+}
+
+function renderExperience() {
+  const timeline = document.getElementById("experience-timeline");
+  if (!timeline) return;
+
+  timeline.innerHTML = EXPERIENCE.map((item) => `
+    <article class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <time datetime="${item.datetime}" class="timeline-date">${item.date}</time>
+        <h3>${item.title}</h3>
+        <p class="timeline-org">${item.org}${item.location ? ` · ${item.location}` : ""}</p>
+        ${item.summary ? `<p>${item.summary}</p>` : ""}
+        ${item.bullets ? `<ul>${item.bullets.map((point) => `<li>${point}</li>`).join("")}</ul>` : ""}
+      </div>
+    </article>
+  `).join("");
 }
 
 function featureTag(f) {
@@ -389,6 +408,7 @@ function syncHeroStats() {
 
 document.addEventListener("DOMContentLoaded", () => {
   syncHeroStats();
+  renderExperience();
   renderFeatured();
   renderFilters();
   renderProjects();

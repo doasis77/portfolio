@@ -16,6 +16,56 @@ export const PROFILE = {
   },
 };
 
+export const EXPERIENCE = [
+  {
+    date: "2025 — Present",
+    datetime: "2025",
+    title: "Independent Software Development",
+    org: "Personal Projects",
+    location: null,
+    summary:
+      "Designing and building software products and experimental applications focused on practical real-world problems.",
+    bullets: null,
+  },
+  {
+    date: "Jul 2025 — Aug 2025",
+    datetime: "2025-07/2025-08",
+    title: "Communications Engineer",
+    org: "Raycom Technologies",
+    location: "Accra, Ghana",
+    summary: null,
+    bullets: [
+      "Installed and managed Ubuntu Linux systems, including static IP setup, user permissions, and updates.",
+      "Set up and secured PostgreSQL databases, enabling remote access through configuration and firewall tuning.",
+      "Developed backend APIs with Node.js and Express, integrated with PostgreSQL for CRUD operations.",
+      "Configured Apache2 reverse proxy and deployed Avaya J100 IP phones, managing SIP registration and firmware.",
+    ],
+  },
+  {
+    date: "May 2024 — Jun 2024",
+    datetime: "2024-05/2024-06",
+    title: "IT Intern",
+    org: "Minerals Commission",
+    location: "Accra, Ghana",
+    summary: null,
+    bullets: [
+      "Resolved network connectivity issues and monitored system performance.",
+      "Developed vehicle and stationery requisition systems to improve internal workflow efficiency.",
+      "Assisted with IT documentation and created staff training materials.",
+    ],
+  },
+  {
+    date: "2022 — 2026",
+    datetime: "2022/2026",
+    title: "BSc Computer Science",
+    org: "Academic City University, Ghana",
+    location: null,
+    summary:
+      "Developed software projects across artificial intelligence, full-stack development, databases, computer vision, mobile applications, and cybersecurity.",
+    bullets: null,
+  },
+];
+
 export const FEATURED = [
   {
     id: "signtalk",
