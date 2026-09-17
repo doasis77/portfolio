@@ -3,124 +3,388 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bill Amegah — Software developer portfolio showcasing projects in mobile apps, AI, web development, and machine learning.">
-  <title>Bill Amegah | Developer Portfolio</title>
+  <title>Bill Amegah | Software Developer | AI &amp; Cybersecurity</title>
+  <meta name="description" content="Portfolio of Bill Amegah, a Computer Science graduate and software developer building practical applications across software engineering, AI, and cybersecurity.">
+  <meta name="author" content="Bill Amegah">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://doasis77.github.io/portfolio/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bill Amegah | Software Developer | AI &amp; Cybersecurity">
+  <meta property="og:description" content="Portfolio of Bill Amegah, a Computer Science graduate building practical software across AI, full-stack development, and cybersecurity.">
+  <meta property="og:url" content="https://doasis77.github.io/portfolio/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/185788680?v=4">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bill Amegah | Software Developer">
+  <meta name="twitter:description" content="Computer Science graduate building practical software across AI, full-stack development, and cybersecurity.">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/185788680?v=4">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#" class="logo">BA<span>.</span></a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <a href="https://github.com/doasis77" target="_blank" rel="noopener" class="nav-github">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.205 0 1.59-.015 2.88-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        GitHub
-      </a>
-    </div>
-  </nav>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <header class="hero" id="about">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <div class="hero-text">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1>Bill Amegah</h1>
-        <p class="hero-role">Software Developer @ Net</p>
-        <p class="hero-bio">
-          I build full-stack web apps, mobile experiences, and AI-powered tools —
-          from emergency response platforms to sign language translators and
-          machine learning experiments.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="https://github.com/doasis77" target="_blank" rel="noopener" class="btn btn-outline">GitHub Profile</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-num" id="stat-repos">16</span>
-            <span class="stat-label">Repositories</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">8+</span>
-            <span class="stat-label">Languages</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num">3</span>
-            <span class="stat-label">Live Demos</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <img src="https://avatars.githubusercontent.com/u/185788680?v=4" alt="Bill Amegah" class="avatar" width="280" height="280">
-        <div class="orbit orbit-1"></div>
-        <div class="orbit orbit-2"></div>
-      </div>
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="brand" aria-label="Bill Amegah home">
+        <span class="brand-mark">BA.</span>
+        <span class="brand-name">Bill Amegah</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#featured" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="assets/Bill-Amegah-CV.pdf" class="btn btn-sm btn-accent nav-cta" download>Download CV</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#featured" class="mobile-link">Projects</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="assets/Bill-Amegah-CV.pdf" class="btn btn-accent" download>Download CV</a>
+    </nav>
   </header>
 
-  <section class="projects" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <h2>Projects</h2>
-        <p>A collection of <span id="project-count">16</span> repositories spanning mobile, AI, web, and backend development.</p>
-      </div>
-
-      <div class="filters" id="filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="mobile">Mobile</button>
-        <button class="filter-btn" data-filter="ai">AI / ML</button>
-        <button class="filter-btn" data-filter="web">Web Apps</button>
-        <button class="filter-btn" data-filter="backend">Backend</button>
-        <button class="filter-btn" data-filter="tools">Tools</button>
-      </div>
-
-      <div class="project-grid" id="project-grid"></div>
-    </div>
-  </section>
-
-  <section class="skills" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <h2>Tech Stack</h2>
-        <p>Technologies used across my projects.</p>
-      </div>
-      <div class="skills-grid" id="skills-grid"></div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-card">
-        <h2>Let's Connect</h2>
-        <p>Open to collaborations, internships, and interesting project ideas.</p>
-        <div class="contact-links">
-          <a href="mailto:amegahbill@gmail.com" class="contact-link">
-            <span class="contact-icon">✉</span>
-            amegahbill@gmail.com
-          </a>
-          <a href="https://github.com/doasis77" target="_blank" rel="noopener" class="contact-link">
-            <span class="contact-icon">⌘</span>
-            github.com/doasis77
-          </a>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero section" id="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="badge badge-open">Open to opportunities</span>
+          <h1 id="hero-heading">Building software that solves <span class="text-accent">real problems</span>.</h1>
+          <p class="hero-subtitle">Computer Science graduate and software developer interested in full-stack development, artificial intelligence, and cybersecurity.</p>
+          <div class="hero-actions">
+            <a href="#featured" class="btn btn-accent">View My Work</a>
+            <a href="assets/Bill-Amegah-CV.pdf" class="btn btn-outline" download>Download CV</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/doasis77" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://linkedin.com/in/bill-amegah-3b799926a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span aria-hidden="true">·</span>
+            <a href="mailto:amegahbill@gmail.com">Email</a>
+          </div>
+          <div class="hero-stats" role="list">
+            <div class="stat" role="listitem">
+              <span class="stat-value">16+</span>
+              <span class="stat-label">Repositories</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-value">8+</span>
+              <span class="stat-label">Languages</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-value">3</span>
+              <span class="stat-label">Live Projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-terminal reveal" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="terminal-title">bill@dev ~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="output">bill-amegah</p>
+              <p><span class="prompt">$</span> focus</p>
+              <p class="output">software engineering</p>
+              <p class="output">AI</p>
+              <p class="output">cybersecurity</p>
+              <p><span class="prompt">$</span> status</p>
+              <p class="output status-line"><span class="cursor-blink">BUILDING...</span></p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="about-heading">About Me</h2>
+        </header>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>I'm a Computer Science graduate from Ghana with a strong interest in software engineering, artificial intelligence, and cybersecurity.</p>
+            <p>I enjoy taking real-world problems and turning them into practical software solutions. My projects have involved full-stack web development, mobile applications, computer vision, machine learning, databases, APIs, and security-focused systems.</p>
+            <p>I'm particularly interested in building technology that is useful, accessible, and capable of solving problems beyond a classroom environment.</p>
+          </div>
+          <div class="values-grid">
+            <article class="value-card">
+              <h3>Build</h3>
+              <p>Practical software over unnecessary complexity.</p>
+            </article>
+            <article class="value-card">
+              <h3>Learn</h3>
+              <p>Continuously improving my technical skills.</p>
+            </article>
+            <article class="value-card">
+              <h3>Secure</h3>
+              <p>Building applications with security in mind.</p>
+            </article>
+            <article class="value-card">
+              <h3>Impact</h3>
+              <p>Technology should solve real problems.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="experience-heading">Experience &amp; Development</h2>
+          <p class="section-sub">Academic &amp; Independent Development</p>
+        </header>
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2022/2026" class="timeline-date">2022 — 2026</time>
+              <h3>BSc Computer Science</h3>
+              <p class="timeline-org">Academic City University, Ghana</p>
+              <p>Developed software projects across artificial intelligence, full-stack development, databases, computer vision, mobile applications, and cybersecurity.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2025" class="timeline-date">2025 — Present</time>
+              <h3>Independent Software Development</h3>
+              <p class="timeline-org">Personal Projects</p>
+              <p>Designing and building software products and experimental applications focused on practical real-world problems.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section" id="featured" aria-labelledby="featured-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="featured-heading">Featured Work</h2>
+          <p class="section-sub">A few projects I've built to solve practical problems.</p>
+        </header>
+        <div class="featured-grid" id="featured-grid"></div>
+      </div>
+    </section>
+
+    <!-- More Projects -->
+    <section class="section section-alt" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="projects-heading">More Projects</h2>
+        </header>
+        <div class="filters" id="project-filters" role="tablist" aria-label="Filter projects"></div>
+        <div class="project-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- Cybersecurity -->
+    <section class="section" id="cybersecurity" aria-labelledby="security-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="security-heading">Cybersecurity</h2>
+          <p class="section-sub">Security-minded development and practical technical foundations.</p>
+        </header>
+        <div class="security-grid reveal" id="security-grid"></div>
+        <p class="security-note reveal">Currently expanding my practical cybersecurity knowledge through projects, labs, and continued learning.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="skills-heading">Skills</h2>
+        </header>
+        <div class="skills-categories reveal" id="skills-container"></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="education-heading">Education</h2>
+        </header>
+        <article class="education-card reveal">
+          <div class="education-header">
+            <h3>BSc Computer Science</h3>
+            <time datetime="2022/2026">2022 — 2026</time>
+          </div>
+          <p class="education-org">Academic City University · Ghana</p>
+          <p>Computer Science studies covering software engineering, artificial intelligence, databases, algorithms, computer networks, and related computing disciplines.</p>
+          <p class="education-note"><strong>Final-year project:</strong> SignTalk</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section section-alt" id="certifications" aria-labelledby="certs-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="certs-heading">Certifications &amp; Learning</h2>
+        </header>
+        <div class="placeholder-card reveal">
+          <p>Currently expanding my professional certifications in software development, cybersecurity, cloud technologies, and AI.</p>
+          <p class="placeholder-hint">[ADD INFORMATION] — Update this section when certifications are obtained.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub -->
+    <section class="section" id="github" aria-labelledby="github-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="github-heading">Open Source &amp; GitHub</h2>
+          <p class="section-sub">My GitHub contains experiments, academic projects, applications, and ongoing development work.</p>
+        </header>
+        <div class="github-panel reveal">
+          <div class="github-stats">
+            <div class="github-stat"><span>16+</span> repositories</div>
+            <div class="github-stat"><span>8+</span> languages</div>
+          </div>
+          <div class="pinned-repos" id="pinned-repos"></div>
+          <a href="https://github.com/doasis77" target="_blank" rel="noopener noreferrer" class="btn btn-accent">View GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Currently Building -->
+    <section class="section section-alt" id="building" aria-labelledby="building-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="building-heading">Currently Building</h2>
+        </header>
+        <article class="building-card reveal">
+          <div class="building-header">
+            <h3>ScrollLock</h3>
+            <span class="badge badge-dev">In Development</span>
+          </div>
+          <p>Exploring how intelligent behavioral insights and application controls can help users build healthier digital habits.</p>
+          <div class="building-actions">
+            <a href="https://scrolllock.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Project</a>
+            <a href="https://github.com/doasis77/Scrolllock-" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Technical Writing -->
+    <section class="section" id="writing" aria-labelledby="writing-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="writing-heading">Technical Notes</h2>
+        </header>
+        <div class="articles-grid reveal" id="articles-grid"></div>
+      </div>
+    </section>
+
+    <!-- Resume CTA -->
+    <section class="section section-alt" id="resume" aria-labelledby="resume-heading">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <h2 id="resume-heading">Interested in working together?</h2>
+          <p>I'm open to software development opportunities, graduate roles, internships, collaborations, and interesting technical projects.</p>
+          <div class="cta-actions">
+            <a href="assets/Bill-Amegah-CV.pdf" class="btn btn-accent" download>Download CV</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 id="contact-heading">Let's Connect</h2>
+          <p class="section-sub">Have a project, opportunity, or technical idea? I'd be happy to hear from you.</p>
+        </header>
+        <div class="contact-grid reveal">
+          <div class="contact-info">
+            <a href="mailto:amegahbill@gmail.com" class="contact-item">
+              <span class="contact-label">Email</span>
+              <span>amegahbill@gmail.com</span>
+            </a>
+            <a href="https://github.com/doasis77" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-label">GitHub</span>
+              <span>github.com/doasis77</span>
+            </a>
+            <a href="https://linkedin.com/in/bill-amegah-3b799926a/" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <span class="contact-label">LinkedIn</span>
+              <span>linkedin.com/in/bill-amegah-3b799926a</span>
+            </a>
+          </div>
+          <form class="contact-form" id="contact-form" aria-label="Contact form">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent">Send Message</button>
+            <p class="form-note">Opens your email client to send the message. To use Formspree or EmailJS, configure the handler in <code>js/main.js</code>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Bill Amegah. Built with HTML, CSS &amp; JavaScript.</p>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">BA.</span>
+        <p>Bill Amegah</p>
+        <p class="footer-tagline">Building useful software. Learning continuously.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://github.com/doasis77" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/bill-amegah-3b799926a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:amegahbill@gmail.com">Email</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Bill Amegah. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <!-- Case Study Modal -->
+  <dialog class="modal" id="case-study-modal" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <button class="modal-close" id="modal-close" aria-label="Close case study">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </dialog>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

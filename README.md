@@ -1,29 +1,35 @@
 # Bill Amegah — Developer Portfolio
 
-A single-page portfolio website showcasing all GitHub projects by [doasis77](https://github.com/doasis77).
+Professional portfolio site for [doasis77](https://github.com/doasis77).
 
-## Features
+**Live:** [doasis77.github.io/portfolio](https://doasis77.github.io/portfolio/)
 
-- Hero section with profile and stats
-- Filterable project grid (Mobile, AI/ML, Web, Backend, Tools)
-- Tech stack skills section
-- Contact links
-- Fully responsive dark theme
+## Setup
 
-## Usage
-
-Open `index.html` in a browser, or serve locally:
+Open `index.html` locally or:
 
 ```bash
 npx serve .
 ```
 
-## Deploy to GitHub Pages
+## CV
 
-1. Push this folder to a GitHub repo
-2. Go to Settings → Pages → Source: `main` branch, `/ (root)`
-3. Your site will be live at `https://doasis77.github.io/portfolio/`
+Place your resume at `assets/Bill-Amegah-CV.pdf` for the Download CV buttons to work.
 
-## Author
+## Contact form
 
-Bill Amegah — [amegahbill@gmail.com](mailto:amegahbill@gmail.com)
+The form uses `mailto:` by default. To use Formspree or EmailJS, update the handler in `js/main.js`.
+
+## Structure
+
+```
+portfolio/
+├── index.html
+├── styles.css
+├── js/
+│   ├── data.js      # Project data (edit here to update content)
+│   └── main.js      # Rendering and interactivity
+└── assets/
+    ├── favicon.svg
+    └── Bill-Amegah-CV.pdf   ← add your CV here
+```
