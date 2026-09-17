@@ -11,7 +11,7 @@ export const PROFILE = {
   cvPath: "assets/cv.html",
   cvPdfPath: "assets/Bill_Amegah.pdf",
   stats: {
-    repos: "18+",
+    repos: "19+",
     languages: "8+",
     liveProjects: "5",
   },
@@ -245,6 +245,17 @@ export const CASE_STUDIES = {
 
 export const PROJECTS = [
   {
+    name: "linux-security-audit-tool",
+    title: "Linux Security Audit Tool",
+    description:
+      "Read-only Linux security auditing CLI with 59 checks across 15 categories, graded scoring, JSON/CSV/PDF reports, and SQLite or PostgreSQL audit history.",
+    tech: ["Python", "Typer", "SQLite", "PostgreSQL"],
+    category: "security",
+    status: "Complete",
+    url: "https://github.com/doasis77/linux-security-audit-tool",
+    demo: null,
+  },
+  {
     name: "intrusion-detection-system",
     title: "Lab Intrusion Detection System",
     description:
@@ -461,7 +472,7 @@ export const CYBERSECURITY = [
   },
   {
     title: "System Security",
-    items: ["Linux", "File permissions", "Users & groups", "sudo", "systemctl"],
+    items: ["Linux", "File permissions", "Users & groups", "sudo", "systemctl", "Security auditing"],
   },
   {
     title: "Security Development",
