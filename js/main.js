@@ -37,18 +37,16 @@ function projectVisual(type) {
           <span class="mock-incident-meta">Citizen · 2 min ago</span>
         </div>
       </div>`,
-    scrolllock: `
-      <div class="mock mock-scrolllock">
-        <div class="mock-phone">
-          <div class="mock-screen-time">
-            <span class="mock-time-label">Screen time today</span>
-            <span class="mock-time-value">2h 14m</span>
-            <div class="mock-bar"><span style="width:45%"></span></div>
-          </div>
-          <div class="mock-restrict">
-            <span>Social apps</span>
-            <span class="mock-toggle on"></span>
-          </div>
+    canteenhub: `
+      <div class="mock mock-canteenhub">
+        <div class="mock-menu">
+          <span class="mock-item">🍔 Burger · $8.99</span>
+          <span class="mock-item">🍕 Pizza · $12.99</span>
+          <span class="mock-item">🥗 Salad · $7.99</span>
+        </div>
+        <div class="mock-cart">
+          <span class="mock-label">Cart</span>
+          <span class="mock-cart-total">2 items · $21.98</span>
         </div>
       </div>`,
   };
@@ -270,7 +268,6 @@ function renderSkills() {
 const REPO_LOOKUP = {
   scars: { title: "SCARS", url: "https://github.com/doasis77/scars" },
   "sign-language-translator": { title: "SignTalk", url: "https://github.com/doasis77/sign-language-translator" },
-  "Scrolllock-": { title: "ScrollLock", url: "https://github.com/doasis77/Scrolllock-" },
   CanteenHub: { title: "CanteenHub", url: "https://github.com/doasis77/CanteenHub" },
   "AI-Rag-System-": { title: "AI RAG Chatbot", url: "https://github.com/doasis77/AI-Rag-System-" },
   "Events-Management": { title: "Events Management", url: "https://github.com/doasis77/Events-Management" },

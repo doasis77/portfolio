@@ -34,6 +34,7 @@ export const FEATURED = [
     ],
     github: "https://github.com/doasis77/sign-language-translator",
     demo: "https://signtalk-demo.vercel.app",
+    visual: "signtalk",
     accent: "#7C5CFC",
   },
   {
@@ -56,23 +57,22 @@ export const FEATURED = [
     accent: "#4F8CFF",
   },
   {
-    id: "scrolllock",
-    title: "ScrollLock",
-    subtitle: "Technology for healthier digital habits",
+    id: "canteenhub",
+    title: "CanteenHub",
+    subtitle: "Campus canteen ordering made simple",
     description:
-      "A productivity and digital wellbeing application designed to help users reduce distracting phone usage through intelligent app restrictions and usage insights.",
-    tech: ["TypeScript", "Kotlin", "PostgreSQL"],
+      "A full-stack campus canteen platform with menu browsing, cart management, order tracking, and loyalty points.",
+    tech: ["Node.js", "PostgreSQL", "Neon", "JavaScript", "JWT"],
     features: [
-      { name: "App Restrictions", status: "live" },
-      { name: "Usage Insights", status: "in-dev" },
-      { name: "Behavioral Analytics", status: "in-dev" },
+      { name: "Menu & Cart", status: "live" },
+      { name: "Order Tracking", status: "live" },
+      { name: "Loyalty Points", status: "live" },
+      { name: "JWT Auth", status: "live" },
     ],
-    github: "https://github.com/doasis77/Scrolllock-",
-    demo: "https://scrolllock.vercel.app",
-    visual: "scrolllock",
-    accent: "#35D07F",
-    status: "In Development",
-    private: true,
+    github: "https://github.com/doasis77/CanteenHub",
+    demo: "https://canteenhub-demo.vercel.app",
+    visual: "canteenhub",
+    accent: "#F59E0B",
   },
 ];
 
@@ -154,38 +154,6 @@ export const CASE_STUDIES = {
     github: "https://github.com/doasis77/scars",
     demo: null,
   },
-  scrolllock: {
-    title: "ScrollLock",
-    overview:
-      "ScrollLock is a productivity and digital wellbeing platform exploring how application controls and usage insights can help users build healthier digital habits.",
-    problem:
-      "Excessive phone usage and app distractions reduce focus and productivity. Users need tools that help them understand and control their digital habits.",
-    role: "Developer — building the full-stack platform including mobile and backend components.",
-    technology: ["TypeScript", "Kotlin", "PostgreSQL", "Docker"],
-    architecture:
-      "Full-stack application with a TypeScript backend, PostgreSQL database, and Kotlin mobile client. Deployed with Docker support.",
-    features: [
-      "Application restriction controls",
-      "Usage tracking and insights (in development)",
-      "Behavioral analytics framework (in development)",
-    ],
-    challenges: [
-      "Balancing restriction effectiveness with user autonomy",
-      "Collecting usage data responsibly and securely",
-      "Cross-platform consistency between mobile and web interfaces",
-    ],
-    solution:
-      "Building an integrated platform with backend analytics, mobile enforcement, and a web dashboard for configuration and insights.",
-    results:
-      "Active development with a deployed web preview. Core restriction and platform infrastructure in place.",
-    lessons: [
-      "Digital wellbeing tools require careful UX to avoid feeling punitive",
-      "Backend analytics need clear data models from the start",
-    ],
-    github: "https://github.com/doasis77/Scrolllock-",
-    demo: "https://scrolllock.vercel.app",
-    status: "In Development",
-  },
 };
 
 export const PROJECTS = [
@@ -203,9 +171,10 @@ export const PROJECTS = [
     name: "CanteenHub",
     title: "CanteenHub",
     description: "Campus canteen ordering platform with real-time tracking, loyalty points, and JWT authentication.",
-    tech: ["Node.js", "PostgreSQL", "JavaScript"],
+    tech: ["Node.js", "PostgreSQL", "Neon", "JavaScript"],
     category: "web",
     status: "Complete",
+    url: "https://github.com/doasis77/CanteenHub",
     demo: "https://canteenhub-demo.vercel.app",
   },
   {
@@ -245,16 +214,18 @@ export const PROJECTS = [
     tech: ["Python", "Jupyter", "ML"],
     category: "ai",
     status: "Complete",
-    demo: "https://neural-networks-demo.vercel.app",
+    demo: null,
+    url: "https://github.com/doasis77/neural-networks",
   },
   {
     name: "raycom",
     title: "Raycom Web Dialer",
     description: "Web-based SIP dialer and billing platform with Express and PostgreSQL backend.",
-    tech: ["SIP.js", "Express", "PostgreSQL"],
+    tech: ["SIP.js", "Express", "PostgreSQL", "Neon"],
     category: "web",
     status: "Complete",
-    demo: "https://raycom-dialer.vercel.app",
+    url: "https://github.com/doasis77/raycom",
+    demo: null,
   },
   {
     name: "Vehicle-Requisition-System",
@@ -320,7 +291,7 @@ export const SKILLS = {
   languages: ["Python", "JavaScript", "TypeScript", "Java", "SQL", "HTML", "CSS"],
   frameworks: ["React", "React Native", "Node.js", "Express", "Flask", "Expo"],
   ai: ["Scikit-learn", "OpenCV", "MediaPipe", "Machine Learning", "Computer Vision"],
-  databases: ["PostgreSQL", "Supabase", "SQLite"],
+  databases: ["PostgreSQL", "Neon", "Supabase", "SQLite"],
   tools: ["Git", "GitHub", "VS Code", "Linux", "Docker"],
   cloud: ["Supabase", "GitHub Pages", "Vercel"],
 };
@@ -366,7 +337,6 @@ export const ARTICLES = [
 export const PINNED_REPOS = [
   "scars",
   "sign-language-translator",
-  "Scrolllock-",
   "CanteenHub",
   "AI-Rag-System-",
   "Events-Management",
